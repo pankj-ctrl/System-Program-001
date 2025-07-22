@@ -249,17 +249,17 @@ ul a{
     background-color: #0f1111;
     color: white;
     height: 80px;
+    font-size:0.75rem ;
+    text-align: center;
 
 }
 
 .pages{
 font-size:0.75rem ;
-text-align: center;
-padding:20px;
+
 }
 
 .copyright{
     padding-top:5px;
-font-size:0.75rem ;
-text-align: center;
+
 }
