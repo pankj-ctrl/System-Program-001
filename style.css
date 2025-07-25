@@ -1,0 +1,151 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0,0, 0.3);
+}
+.input-container{
+    margin-bottom: 30px;
+}
+input[type="text"]{
+    width: 300px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-right: 10px;
+}
+
+input[type="text"]:focus{
+    box-shadow: o 4px 20px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+button:not(.delete){
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+button:not(.delete):hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+ul li {
+  background:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  
+}
+ul li:hover{
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0,0, 0.15);
+}
+
+button.delete{
+    background: linear-gradient(45deg, #ff4757, #ff3742);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s
+    
+    ease;
+}
+button.delete:hover{
+    background:linear-gradient(45deg, #ff3742, #ff2f3a);
+    transform: scale(1.1);
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  transform: translateX(100px);
+}
+/* Additional advanced styles */
+
+/* Dark Theme Toggle */
+.dark-theme {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.dark-theme ul li {
+    background: #34495e;
+    color: white;
+}
+
+/* Priority Colors */
+.priority-high { border-left: 5px solid #e74c3c; }
+.priority-medium { border-left: 5px solid #f39c12; }
+.priority-low { border-left: 5px solid #27ae60; }
+
+/* Completed Task Style */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background: #ecf0f1 !important;
+}
+
+/* Loading Animation */
+.loading {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container { padding: 10px; }
+    input[type="text"] { width: 250px; margin-bottom: 10px; }
+    button:not(.delete) { margin-left: 0; }
+    h1 { font-size: 2rem; }
+}
+
+/* Animations */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
